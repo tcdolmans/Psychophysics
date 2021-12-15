@@ -1,0 +1,477 @@
+﻿<?xml version="1.0" ?>
+<PsychoPy2experiment encoding="utf-8" version="2021.2.3">
+  <Settings>
+    <Param name="Audio latency priority" updates="None" val="use prefs" valType="str"/>
+    <Param name="Audio lib" updates="None" val="use prefs" valType="str"/>
+    <Param name="Completed URL" updates="None" val="" valType="str"/>
+    <Param name="Data file delimiter" updates="None" val="auto" valType="str"/>
+    <Param name="Data filename" updates="None" val="u'ExpData/%s_%s_%s' % (expInfo['participant'], expName, expInfo['date'])" valType="code"/>
+    <Param name="Enable Escape" updates="None" val="True" valType="bool"/>
+    <Param name="Experiment info" updates="None" val="{'participant': ''}" valType="code"/>
+    <Param name="Force stereo" updates="None" val="True" valType="bool"/>
+    <Param name="Full-screen window" updates="None" val="True" valType="bool"/>
+    <Param name="HTML path" updates="None" val="" valType="str"/>
+    <Param name="Incomplete URL" updates="None" val="" valType="str"/>
+    <Param name="Monitor" updates="None" val="testMonitor" valType="str"/>
+    <Param name="Resources" updates="None" val="[]" valType="list"/>
+    <Param name="Save csv file" updates="None" val="True" valType="bool"/>
+    <Param name="Save excel file" updates="None" val="True" valType="bool"/>
+    <Param name="Save hdf5 file" updates="None" val="False" valType="bool"/>
+    <Param name="Save log file" updates="None" val="True" valType="bool"/>
+    <Param name="Save psydat file" updates="None" val="True" valType="bool"/>
+    <Param name="Save wide csv file" updates="None" val="True" valType="bool"/>
+    <Param name="Screen" updates="None" val="1" valType="num"/>
+    <Param name="Show info dlg" updates="None" val="True" valType="bool"/>
+    <Param name="Show mouse" updates="None" val="False" valType="bool"/>
+    <Param name="Units" updates="None" val="height" valType="str"/>
+    <Param name="Use version" updates="None" val="" valType="str"/>
+    <Param name="Window size (pixels)" updates="None" val="[1707, 960]" valType="list"/>
+    <Param name="blendMode" updates="None" val="avg" valType="str"/>
+    <Param name="color" updates="None" val="$[0,0,0]" valType="color"/>
+    <Param name="colorSpace" updates="None" val="rgb" valType="str"/>
+    <Param name="elAddress" updates="None" val="100.1.1.1" valType="str"/>
+    <Param name="elDataFiltering" updates="None" val="FILTER_LEVEL_2" valType="str"/>
+    <Param name="elLiveFiltering" updates="None" val="FILTER_LEVEL_OFF" valType="str"/>
+    <Param name="elModel" updates="None" val="EYELINK 1000 DESKTOP" valType="str"/>
+    <Param name="elPupilAlgorithm" updates="None" val="ELLIPSE_FIT" valType="str"/>
+    <Param name="elPupilMeasure" updates="None" val="PUPIL_AREA" valType="str"/>
+    <Param name="elSampleRate" updates="None" val="1000" valType="num"/>
+    <Param name="elSimMode" updates="None" val="False" valType="bool"/>
+    <Param name="elTrackEyes" updates="None" val="RIGHT_EYE" valType="str"/>
+    <Param name="elTrackingMode" updates="None" val="PUPIL_CR_TRACKING" valType="str"/>
+    <Param name="expName" updates="None" val="cueing" valType="str"/>
+    <Param name="exportHTML" updates="None" val="on Sync" valType="str"/>
+    <Param name="eyetracker" updates="None" val="None" valType="str"/>
+    <Param name="gpAddress" updates="None" val="127.0.0.1" valType="str"/>
+    <Param name="gpPort" updates="None" val="4242" valType="num"/>
+    <Param name="logging level" updates="None" val="exp" valType="code"/>
+    <Param name="mgBlink" updates="None" val="('MIDDLE_BUTTON',)" valType="list"/>
+    <Param name="mgMove" updates="None" val="CONTINUOUS" valType="str"/>
+    <Param name="mgSaccade" updates="None" val="0.5" valType="num"/>
+    <Param name="tbLicenseFile" updates="None" val="" valType="str"/>
+    <Param name="tbModel" updates="None" val="" valType="str"/>
+    <Param name="tbSampleRate" updates="None" val="60" valType="num"/>
+    <Param name="tbSerialNo" updates="None" val="" valType="str"/>
+  </Settings>
+  <Routines>
+    <Routine name="endo_setcion">
+      <KeyboardComponent name="key_resp">
+        <Param name="allowedKeys" updates="constant" val="'a','l'" valType="list"/>
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="name" updates="None" val="key_resp" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="$cue_time + 2" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="7" valType="code"/>
+        <Param name="store" updates="constant" val="last key" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+      <PolygonComponent name="endo_right">
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="contrast" updates="constant" val="1" valType="num"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="fillColor" updates="constant" val="0,0,0" valType="color"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="lineColor" updates="set every repeat" val="black" valType="color"/>
+        <Param name="lineWidth" updates="constant" val="25" valType="num"/>
+        <Param name="nVertices" updates="constant" val="4" valType="int"/>
+        <Param name="name" updates="None" val="endo_right" valType="code"/>
+        <Param name="opacity" updates="constant" val="" valType="num"/>
+        <Param name="ori" updates="constant" val="0" valType="num"/>
+        <Param name="pos" updates="constant" val="(0.4, 0)" valType="list"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="shape" updates="None" val="rectangle" valType="str"/>
+        <Param name="size" updates="constant" val="(0.3, 0.3)" valType="list"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="7" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="vertices" updates="constant" val="" valType="list"/>
+      </PolygonComponent>
+      <PolygonComponent name="endo_left">
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="contrast" updates="constant" val="1" valType="num"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="fillColor" updates="constant" val="0, 0, 0" valType="color"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="lineColor" updates="constant" val="black" valType="color"/>
+        <Param name="lineWidth" updates="constant" val="30" valType="num"/>
+        <Param name="nVertices" updates="constant" val="4" valType="int"/>
+        <Param name="name" updates="None" val="endo_left" valType="code"/>
+        <Param name="opacity" updates="constant" val="" valType="num"/>
+        <Param name="ori" updates="constant" val="0" valType="num"/>
+        <Param name="pos" updates="constant" val="(-0.4, 0)" valType="list"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="shape" updates="None" val="rectangle" valType="str"/>
+        <Param name="size" updates="constant" val="(0.3, 0.3)" valType="list"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="7" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="vertices" updates="constant" val="" valType="list"/>
+      </PolygonComponent>
+      <PolygonComponent name="fixation_cross">
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="contrast" updates="constant" val="1" valType="num"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="fillColor" updates="constant" val="white" valType="color"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="lineColor" updates="constant" val="white" valType="color"/>
+        <Param name="lineWidth" updates="constant" val="1" valType="num"/>
+        <Param name="nVertices" updates="constant" val="4" valType="int"/>
+        <Param name="name" updates="None" val="fixation_cross" valType="code"/>
+        <Param name="opacity" updates="constant" val="" valType="num"/>
+        <Param name="ori" updates="constant" val="0" valType="num"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="list"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="shape" updates="None" val="cross" valType="str"/>
+        <Param name="size" updates="constant" val="(0.05, 0.05)" valType="list"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="7" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="vertices" updates="constant" val="" valType="list"/>
+      </PolygonComponent>
+      <PolygonComponent name="endo_cue">
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="contrast" updates="constant" val="1" valType="num"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="fillColor" updates="constant" val="white" valType="color"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="lineColor" updates="constant" val="white" valType="color"/>
+        <Param name="lineWidth" updates="constant" val="1" valType="num"/>
+        <Param name="nVertices" updates="constant" val="4" valType="int"/>
+        <Param name="name" updates="None" val="endo_cue" valType="code"/>
+        <Param name="opacity" updates="constant" val="" valType="num"/>
+        <Param name="ori" updates="set every repeat" val="cue_orientation" valType="num"/>
+        <Param name="pos" updates="set every repeat" val="cue_position" valType="list"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="shape" updates="None" val="triangle" valType="str"/>
+        <Param name="size" updates="constant" val="(0.02, 0.02)" valType="list"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="$cue_time + 1.5" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val=".75" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="vertices" updates="constant" val="" valType="list"/>
+      </PolygonComponent>
+      <PolygonComponent name="endo_stimulus">
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="contrast" updates="constant" val="0.5" valType="num"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="fillColor" updates="constant" val="red" valType="color"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="lineColor" updates="constant" val="red" valType="color"/>
+        <Param name="lineWidth" updates="constant" val="1" valType="num"/>
+        <Param name="nVertices" updates="constant" val="4" valType="int"/>
+        <Param name="name" updates="None" val="endo_stimulus" valType="code"/>
+        <Param name="opacity" updates="constant" val="0.01" valType="num"/>
+        <Param name="ori" updates="constant" val="0" valType="num"/>
+        <Param name="pos" updates="set every repeat" val="stim_position" valType="list"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="shape" updates="None" val="circle" valType="str"/>
+        <Param name="size" updates="constant" val="(0.15, 0.15)" valType="list"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="$cue_time + 2" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val=".1" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="vertices" updates="constant" val="" valType="list"/>
+      </PolygonComponent>
+    </Routine>
+    <Routine name="exo_section">
+      <KeyboardComponent name="key_resp_2">
+        <Param name="allowedKeys" updates="constant" val="'a','l'" valType="list"/>
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="name" updates="None" val="key_resp_2" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="$cue_time + 1.6" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="7" valType="code"/>
+        <Param name="store" updates="constant" val="last key" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+      <PolygonComponent name="exo_right">
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="contrast" updates="constant" val="1" valType="num"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="fillColor" updates="constant" val="0.0000, 0.0000, 0.0000" valType="color"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="lineColor" updates="constant" val="black" valType="color"/>
+        <Param name="lineWidth" updates="constant" val="25" valType="num"/>
+        <Param name="nVertices" updates="constant" val="4" valType="int"/>
+        <Param name="name" updates="None" val="exo_right" valType="code"/>
+        <Param name="opacity" updates="constant" val="" valType="num"/>
+        <Param name="ori" updates="constant" val="0" valType="num"/>
+        <Param name="pos" updates="constant" val="(0.4, 0)" valType="list"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="shape" updates="None" val="rectangle" valType="str"/>
+        <Param name="size" updates="constant" val="(0.3, 0.3)" valType="list"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="7" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="vertices" updates="constant" val="" valType="list"/>
+      </PolygonComponent>
+      <PolygonComponent name="exo_left">
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="contrast" updates="constant" val="1" valType="num"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="fillColor" updates="constant" val="0.0000, 0.0000, 0.0000" valType="color"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="lineColor" updates="constant" val="black" valType="color"/>
+        <Param name="lineWidth" updates="constant" val="25" valType="num"/>
+        <Param name="nVertices" updates="constant" val="4" valType="int"/>
+        <Param name="name" updates="None" val="exo_left" valType="code"/>
+        <Param name="opacity" updates="constant" val="" valType="num"/>
+        <Param name="ori" updates="constant" val="0" valType="num"/>
+        <Param name="pos" updates="constant" val="(-0.4, 0)" valType="list"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="shape" updates="None" val="rectangle" valType="str"/>
+        <Param name="size" updates="constant" val="(0.3, 0.3)" valType="list"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="7" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="vertices" updates="constant" val="" valType="list"/>
+      </PolygonComponent>
+      <PolygonComponent name="fixation">
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="contrast" updates="constant" val="1" valType="num"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="fillColor" updates="constant" val="white" valType="color"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="lineColor" updates="constant" val="white" valType="color"/>
+        <Param name="lineWidth" updates="constant" val="1" valType="num"/>
+        <Param name="nVertices" updates="constant" val="4" valType="int"/>
+        <Param name="name" updates="None" val="fixation" valType="code"/>
+        <Param name="opacity" updates="constant" val="" valType="num"/>
+        <Param name="ori" updates="constant" val="0" valType="num"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="list"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="shape" updates="None" val="cross" valType="str"/>
+        <Param name="size" updates="constant" val="(0.05, 0.05)" valType="list"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="7" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="vertices" updates="constant" val="" valType="list"/>
+      </PolygonComponent>
+      <PolygonComponent name="exo_cue">
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="contrast" updates="constant" val="1" valType="num"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="fillColor" updates="constant" val="0.0000, 0.0000, 0.0000" valType="color"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="lineColor" updates="constant" val="white" valType="color"/>
+        <Param name="lineWidth" updates="constant" val="30" valType="num"/>
+        <Param name="nVertices" updates="constant" val="4" valType="int"/>
+        <Param name="name" updates="None" val="exo_cue" valType="code"/>
+        <Param name="opacity" updates="constant" val="" valType="num"/>
+        <Param name="ori" updates="constant" val="0" valType="num"/>
+        <Param name="pos" updates="set every repeat" val="$cue_position" valType="list"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="shape" updates="None" val="rectangle" valType="str"/>
+        <Param name="size" updates="constant" val="(0.3, 0.3)" valType="list"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="$cue_time + 1.5" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="0.1" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="vertices" updates="constant" val="" valType="list"/>
+      </PolygonComponent>
+      <PolygonComponent name="exo_stimulus">
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="contrast" updates="constant" val="0.5" valType="num"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="fillColor" updates="constant" val="red" valType="color"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="lineColor" updates="constant" val="red" valType="color"/>
+        <Param name="lineWidth" updates="constant" val="1" valType="num"/>
+        <Param name="nVertices" updates="constant" val="4" valType="int"/>
+        <Param name="name" updates="None" val="exo_stimulus" valType="code"/>
+        <Param name="opacity" updates="constant" val="0.01" valType="num"/>
+        <Param name="ori" updates="constant" val="0" valType="num"/>
+        <Param name="pos" updates="set every repeat" val="$stim_position" valType="list"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="shape" updates="None" val="circle" valType="str"/>
+        <Param name="size" updates="constant" val="(0.15, 0.15)" valType="list"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="$cue_time + 1.6" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="0.1" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="vertices" updates="constant" val="" valType="list"/>
+      </PolygonComponent>
+    </Routine>
+    <Routine name="intro">
+      <TextComponent name="intro_text">
+        <Param name="color" updates="constant" val="white" valType="color"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="contrast" updates="constant" val="1" valType="num"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="None" valType="str"/>
+        <Param name="font" updates="constant" val="Open Sans" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.03" valType="num"/>
+        <Param name="name" updates="None" val="intro_text" valType="code"/>
+        <Param name="opacity" updates="constant" val="" valType="num"/>
+        <Param name="ori" updates="constant" val="0" valType="num"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="list"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="500" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="Dear Participant,&amp;#10;&amp;#10;Thank you for taking part in this experiment. The objective of this experiment is to identify the effect of endogenous versus exogenous cues on both reaction time and signal detection. &amp;#10;&amp;#10;A ‘cue’ is an indication about which side the stimulus will appear on. These cues can be correct or incorrect. ‘Endogenous’ refers to a cue that one has to think about, in this case, an arrow pointing to one side. ‘Exogenous’ refers to a cue that is picked up by lower parts of the visual pathway, in this case, a flashing box. &amp;#10;&amp;#10;Sometime after receiving your cue, a red dot will appear in the square on either side. The dot is quite dim, but it helps to keep looking at the fixation cross. Your task is to press the key that corresponds to the side of the stimulus (not the cue).&amp;#10;&amp;#10;Is it on the left? Press ‘a’. Is it on the right? Press ‘l’. Press them both once to get a feel for where they are.&amp;#10;&amp;#10;Everything clear? Press spacebar to continue. &amp;#10;" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="num"/>
+      </TextComponent>
+      <KeyboardComponent name="intro_resp">
+        <Param name="allowedKeys" updates="constant" val="'space'" valType="list"/>
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="name" updates="None" val="intro_resp" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="store" updates="constant" val="last key" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+      <CodeComponent name="code">
+        <Param name="Before Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Before JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="intro_text.alignText = &quot;left&quot;;&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="intro_text.alignText = 'left'" valType="extendedCode"/>
+        <Param name="Code Type" updates="None" val="Auto-&gt;JS" valType="str"/>
+        <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="code" valType="code"/>
+      </CodeComponent>
+    </Routine>
+    <Routine name="outro">
+      <TextComponent name="outro_text">
+        <Param name="color" updates="constant" val="white" valType="color"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="contrast" updates="constant" val="1" valType="num"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="None" valType="str"/>
+        <Param name="font" updates="constant" val="Open Sans" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="num"/>
+        <Param name="name" updates="None" val="outro_text" valType="code"/>
+        <Param name="opacity" updates="constant" val="" valType="num"/>
+        <Param name="ori" updates="constant" val="0" valType="num"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="list"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="5" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="Thank you for participating!" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="num"/>
+      </TextComponent>
+    </Routine>
+  </Routines>
+  <Flow>
+    <Routine name="intro"/>
+    <LoopInitiator loopType="TrialHandler" name="trials">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="[{'cue_stim_type': 'endo', 'cue_orientation': -90, 'cue_position': (-0.035, 0), 'cue_time': 0.7056869244497335, 'cue_type': 'correct', 'stim_position': (-0.4, 0), 'expected_response': 'a'}, {'cue_stim_type': 'endo', 'cue_orientation': -90, 'cue_position': (-0.035, 0), 'cue_time': 0.7387684035985251, 'cue_type': 'correct', 'stim_position': (-0.4, 0), 'expected_response': 'a'}, {'cue_stim_type': 'endo', 'cue_orientation': -90, 'cue_position': (-0.035, 0), 'cue_time': 0.7866571383694275, 'cue_type': 'correct', 'stim_position': (-0.4, 0), 'expected_response': 'a'}, {'cue_stim_type': 'endo', 'cue_orientation': -90, 'cue_position': (-0.035, 0), 'cue_time': 0.28340262260056537, 'cue_type': 'correct', 'stim_position': (-0.4, 0), 'expected_response': 'a'}, {'cue_stim_type': 'endo', 'cue_orientation': -90, 'cue_position': (-0.035, 0), 'cue_time': 0.5922941594138551, 'cue_type': 'correct', 'stim_position': (-0.4, 0), 'expected_response': 'a'}, {'cue_stim_type': 'endo', 'cue_orientation': -90, 'cue_position': (-0.035, 0), 'cue_time': 0.5645407691009291, 'cue_type': 'correct', 'stim_position': (-0.4, 0), 'expected_response': 'a'}, {'cue_stim_type': 'endo', 'cue_orientation': -90, 'cue_position': (-0.035, 0), 'cue_time': 0.42702221127828477, 'cue_type': 'correct', 'stim_position': (-0.4, 0), 'expected_response': 'a'}, {'cue_stim_type': 'endo', 'cue_orientation': -90, 'cue_position': (-0.035, 0), 'cue_time': 0.02396326924047798, 'cue_type': 'correct', 'stim_position': (-0.4, 0), 'expected_response': 'a'}, {'cue_stim_type': 'endo', 'cue_orientation': -90, 'cue_position': (-0.035, 0), 'cue_time': 0.23391027043498136, 'cue_type': 'correct', 'stim_position': (-0.4, 0), 'expected_response': 'a'}, {'cue_stim_type': 'endo', 'cue_orientation': -90, 'cue_position': (-0.035, 0), 'cue_time': 0.7669666969931148, 'cue_type': 'correct', 'stim_position': (-0.4, 0), 'expected_response': 'a'}, {'cue_stim_type': 'endo', 'cue_orientation': 90, 'cue_position': (0.035, 0), 'cue_time': 0.9706793863527535, 'cue_type': 'incorrect', 'stim_position': (-0.4, 0), 'expected_response': 'a'}, {'cue_stim_type': 'endo', 'cue_orientation': 90, 'cue_position': (0.035, 0), 'cue_time': 0.9010739803891251, 'cue_type': 'incorrect', 'stim_position': (-0.4, 0), 'expected_response': 'a'}, {'cue_stim_type': 'endo', 'cue_orientation': 90, 'cue_position': (0.035, 0), 'cue_time': 0.4499901342346745, 'cue_type': 'incorrect', 'stim_position': (-0.4, 0), 'expected_response': 'a'}, {'cue_stim_type': 'endo', 'cue_orientation': 90, 'cue_position': (0.035, 0), 'cue_time': 0.38360493617076563, 'cue_type': 'incorrect', 'stim_position': (-0.4, 0), 'expected_response': 'a'}, {'cue_stim_type': 'endo', 'cue_orientation': 90, 'cue_position': (0.035, 0), 'cue_time': 0.2379684415492357, 'cue_type': 'incorrect', 'stim_position': (-0.4, 0), 'expected_response': 'a'}, {'cue_stim_type': 'endo', 'cue_orientation': 90, 'cue_position': (0.035, 0), 'cue_time': 0.3939797644424977, 'cue_type': 'incorrect', 'stim_position': (-0.4, 0), 'expected_response': 'a'}, {'cue_stim_type': 'endo', 'cue_orientation': 90, 'cue_position': (0.035, 0), 'cue_time': 0.19704960639573776, 'cue_type': 'incorrect', 'stim_position': (-0.4, 0), 'expected_response': 'a'}, {'cue_stim_type': 'endo', 'cue_orientation': 90, 'cue_position': (0.035, 0), 'cue_time': 0.3779252118559099, 'cue_type': 'incorrect', 'stim_position': (-0.4, 0), 'expected_response': 'a'}, {'cue_stim_type': 'endo', 'cue_orientation': 90, 'cue_position': (0.035, 0), 'cue_time': 0.18359352140224616, 'cue_type': 'incorrect', 'stim_position': (-0.4, 0), 'expected_response': 'a'}, {'cue_stim_type': 'endo', 'cue_orientation': 90, 'cue_position': (0.035, 0), 'cue_time': 0.9127004317251198, 'cue_type': 'incorrect', 'stim_position': (-0.4, 0), 'expected_response': 'a'}, {'cue_stim_type': 'endo', 'cue_orientation': 90, 'cue_position': (0.035, 0), 'cue_time': 0.8970076051360286, 'cue_type': 'correct', 'stim_position': (0.4, 0), 'expected_response': 'l'}, {'cue_stim_type': 'endo', 'cue_orientation': 90, 'cue_position': (0.035, 0), 'cue_time': 0.6423195276025604, 'cue_type': 'correct', 'stim_position': (0.4, 0), 'expected_response': 'l'}, {'cue_stim_type': 'endo', 'cue_orientation': 90, 'cue_position': (0.035, 0), 'cue_time': 0.6591262849764731, 'cue_type': 'correct', 'stim_position': (0.4, 0), 'expected_response': 'l'}, {'cue_stim_type': 'endo', 'cue_orientation': 90, 'cue_position': (0.035, 0), 'cue_time': 0.39625884761736807, 'cue_type': 'correct', 'stim_position': (0.4, 0), 'expected_response': 'l'}, {'cue_stim_type': 'endo', 'cue_orientation': 90, 'cue_position': (0.035, 0), 'cue_time': 0.4283499593741631, 'cue_type': 'correct', 'stim_position': (0.4, 0), 'expected_response': 'l'}, {'cue_stim_type': 'endo', 'cue_orientation': 90, 'cue_position': (0.035, 0), 'cue_time': 0.7311452878836484, 'cue_type': 'correct', 'stim_position': (0.4, 0), 'expected_response': 'l'}, {'cue_stim_type': 'endo', 'cue_orientation': 90, 'cue_position': (0.035, 0), 'cue_time': 0.9478101236950716, 'cue_type': 'correct', 'stim_position': (0.4, 0), 'expected_response': 'l'}, {'cue_stim_type': 'endo', 'cue_orientation': 90, 'cue_position': (0.035, 0), 'cue_time': 0.993881262689159, 'cue_type': 'correct', 'stim_position': (0.4, 0), 'expected_response': 'l'}, {'cue_stim_type': 'endo', 'cue_orientation': 90, 'cue_position': (0.035, 0), 'cue_time': 0.7025707610448116, 'cue_type': 'correct', 'stim_position': (0.4, 0), 'expected_response': 'l'}, {'cue_stim_type': 'endo', 'cue_orientation': 90, 'cue_position': (0.035, 0), 'cue_time': 0.6144709735635417, 'cue_type': 'correct', 'stim_position': (0.4, 0), 'expected_response': 'l'}, {'cue_stim_type': 'endo', 'cue_orientation': -90, 'cue_position': (-0.035, 0), 'cue_time': 0.9828471876315273, 'cue_type': 'incorrect', 'stim_position': (0.4, 0), 'expected_response': 'l'}, {'cue_stim_type': 'endo', 'cue_orientation': -90, 'cue_position': (-0.035, 0), 'cue_time': 0.2976392595268207, 'cue_type': 'incorrect', 'stim_position': (0.4, 0), 'expected_response': 'l'}, {'cue_stim_type': 'endo', 'cue_orientation': -90, 'cue_position': (-0.035, 0), 'cue_time': 0.5469701378611879, 'cue_type': 'incorrect', 'stim_position': (0.4, 0), 'expected_response': 'l'}, {'cue_stim_type': 'endo', 'cue_orientation': -90, 'cue_position': (-0.035, 0), 'cue_time': 0.04779793183180647, 'cue_type': 'incorrect', 'stim_position': (0.4, 0), 'expected_response': 'l'}, {'cue_stim_type': 'endo', 'cue_orientation': -90, 'cue_position': (-0.035, 0), 'cue_time': 0.7701712865549922, 'cue_type': 'incorrect', 'stim_position': (0.4, 0), 'expected_response': 'l'}, {'cue_stim_type': 'endo', 'cue_orientation': -90, 'cue_position': (-0.035, 0), 'cue_time': 0.07901741602572421, 'cue_type': 'incorrect', 'stim_position': (0.4, 0), 'expected_response': 'l'}, {'cue_stim_type': 'endo', 'cue_orientation': -90, 'cue_position': (-0.035, 0), 'cue_time': 0.29956714904652626, 'cue_type': 'incorrect', 'stim_position': (0.4, 0), 'expected_response': 'l'}, {'cue_stim_type': 'endo', 'cue_orientation': -90, 'cue_position': (-0.035, 0), 'cue_time': 0.37307711698805524, 'cue_type': 'incorrect', 'stim_position': (0.4, 0), 'expected_response': 'l'}, {'cue_stim_type': 'endo', 'cue_orientation': -90, 'cue_position': (-0.035, 0), 'cue_time': 0.9206860483593494, 'cue_type': 'incorrect', 'stim_position': (0.4, 0), 'expected_response': 'l'}, {'cue_stim_type': 'endo', 'cue_orientation': -90, 'cue_position': (-0.035, 0), 'cue_time': 0.7043933979083875, 'cue_type': 'incorrect', 'stim_position': (0.4, 0), 'expected_response': 'l'}]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="endo_cues.xlsx" valType="file"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="random" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="num"/>
+      <Param name="name" updates="None" val="trials" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="endo_setcion"/>
+    <LoopTerminator name="trials"/>
+    <LoopInitiator loopType="TrialHandler" name="exo_trials">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="[{'cue_stim_type': 'exo', 'cue_position': (-0.4, 0), 'cue_time': 0.33228981667356505, 'cue_type': 'correct', 'stim_position': (-0.4, 0), 'expected_response': 'a'}, {'cue_stim_type': 'exo', 'cue_position': (-0.4, 0), 'cue_time': 0.1564137278799309, 'cue_type': 'correct', 'stim_position': (-0.4, 0), 'expected_response': 'a'}, {'cue_stim_type': 'exo', 'cue_position': (-0.4, 0), 'cue_time': 0.5762605474981782, 'cue_type': 'correct', 'stim_position': (-0.4, 0), 'expected_response': 'a'}, {'cue_stim_type': 'exo', 'cue_position': (-0.4, 0), 'cue_time': 0.36271911781023525, 'cue_type': 'correct', 'stim_position': (-0.4, 0), 'expected_response': 'a'}, {'cue_stim_type': 'exo', 'cue_position': (-0.4, 0), 'cue_time': 0.24050347507599634, 'cue_type': 'correct', 'stim_position': (-0.4, 0), 'expected_response': 'a'}, {'cue_stim_type': 'exo', 'cue_position': (-0.4, 0), 'cue_time': 0.1204646432692501, 'cue_type': 'correct', 'stim_position': (-0.4, 0), 'expected_response': 'a'}, {'cue_stim_type': 'exo', 'cue_position': (-0.4, 0), 'cue_time': 0.6190691391152903, 'cue_type': 'correct', 'stim_position': (-0.4, 0), 'expected_response': 'a'}, {'cue_stim_type': 'exo', 'cue_position': (-0.4, 0), 'cue_time': 0.04126128936196305, 'cue_type': 'correct', 'stim_position': (-0.4, 0), 'expected_response': 'a'}, {'cue_stim_type': 'exo', 'cue_position': (-0.4, 0), 'cue_time': 0.49994137550299844, 'cue_type': 'correct', 'stim_position': (-0.4, 0), 'expected_response': 'a'}, {'cue_stim_type': 'exo', 'cue_position': (-0.4, 0), 'cue_time': 0.27238578623149223, 'cue_type': 'correct', 'stim_position': (-0.4, 0), 'expected_response': 'a'}, {'cue_stim_type': 'exo', 'cue_position': (0.4, 0), 'cue_time': 0.2836317994317733, 'cue_type': 'incorrect', 'stim_position': (-0.4, 0), 'expected_response': 'a'}, {'cue_stim_type': 'exo', 'cue_position': (0.4, 0), 'cue_time': 0.5423668062603715, 'cue_type': 'incorrect', 'stim_position': (-0.4, 0), 'expected_response': 'a'}, {'cue_stim_type': 'exo', 'cue_position': (0.4, 0), 'cue_time': 0.641709836185558, 'cue_type': 'incorrect', 'stim_position': (-0.4, 0), 'expected_response': 'a'}, {'cue_stim_type': 'exo', 'cue_position': (0.4, 0), 'cue_time': 0.8504486269585174, 'cue_type': 'incorrect', 'stim_position': (-0.4, 0), 'expected_response': 'a'}, {'cue_stim_type': 'exo', 'cue_position': (0.4, 0), 'cue_time': 0.0021202459600094814, 'cue_type': 'incorrect', 'stim_position': (-0.4, 0), 'expected_response': 'a'}, {'cue_stim_type': 'exo', 'cue_position': (0.4, 0), 'cue_time': 0.843533813309906, 'cue_type': 'incorrect', 'stim_position': (-0.4, 0), 'expected_response': 'a'}, {'cue_stim_type': 'exo', 'cue_position': (0.4, 0), 'cue_time': 0.8129667345671767, 'cue_type': 'incorrect', 'stim_position': (-0.4, 0), 'expected_response': 'a'}, {'cue_stim_type': 'exo', 'cue_position': (0.4, 0), 'cue_time': 0.09319469313166973, 'cue_type': 'incorrect', 'stim_position': (-0.4, 0), 'expected_response': 'a'}, {'cue_stim_type': 'exo', 'cue_position': (0.4, 0), 'cue_time': 0.4433431966992393, 'cue_type': 'incorrect', 'stim_position': (-0.4, 0), 'expected_response': 'a'}, {'cue_stim_type': 'exo', 'cue_position': (0.4, 0), 'cue_time': 0.5428012121350249, 'cue_type': 'incorrect', 'stim_position': (-0.4, 0), 'expected_response': 'a'}, {'cue_stim_type': 'exo', 'cue_position': (0.4, 0), 'cue_time': 0.6134322306232748, 'cue_type': 'correct', 'stim_position': (0.4, 0), 'expected_response': 'l'}, {'cue_stim_type': 'exo', 'cue_position': (0.4, 0), 'cue_time': 0.42042298933524336, 'cue_type': 'correct', 'stim_position': (0.4, 0), 'expected_response': 'l'}, {'cue_stim_type': 'exo', 'cue_position': (0.4, 0), 'cue_time': 0.7938944825899228, 'cue_type': 'correct', 'stim_position': (0.4, 0), 'expected_response': 'l'}, {'cue_stim_type': 'exo', 'cue_position': (0.4, 0), 'cue_time': 0.28710372813133933, 'cue_type': 'correct', 'stim_position': (0.4, 0), 'expected_response': 'l'}, {'cue_stim_type': 'exo', 'cue_position': (0.4, 0), 'cue_time': 0.6213500325446535, 'cue_type': 'correct', 'stim_position': (0.4, 0), 'expected_response': 'l'}, {'cue_stim_type': 'exo', 'cue_position': (0.4, 0), 'cue_time': 0.2427756313014502, 'cue_type': 'correct', 'stim_position': (0.4, 0), 'expected_response': 'l'}, {'cue_stim_type': 'exo', 'cue_position': (0.4, 0), 'cue_time': 0.0325124900817807, 'cue_type': 'correct', 'stim_position': (0.4, 0), 'expected_response': 'l'}, {'cue_stim_type': 'exo', 'cue_position': (0.4, 0), 'cue_time': 0.7386611339705057, 'cue_type': 'correct', 'stim_position': (0.4, 0), 'expected_response': 'l'}, {'cue_stim_type': 'exo', 'cue_position': (0.4, 0), 'cue_time': 0.7952770235546287, 'cue_type': 'correct', 'stim_position': (0.4, 0), 'expected_response': 'l'}, {'cue_stim_type': 'exo', 'cue_position': (0.4, 0), 'cue_time': 0.5147733584100419, 'cue_type': 'correct', 'stim_position': (0.4, 0), 'expected_response': 'l'}, {'cue_stim_type': 'exo', 'cue_position': (-0.4, 0), 'cue_time': 0.004487989147306193, 'cue_type': 'incorrect', 'stim_position': (0.4, 0), 'expected_response': 'l'}, {'cue_stim_type': 'exo', 'cue_position': (-0.4, 0), 'cue_time': 0.1153605878572842, 'cue_type': 'incorrect', 'stim_position': (0.4, 0), 'expected_response': 'l'}, {'cue_stim_type': 'exo', 'cue_position': (-0.4, 0), 'cue_time': 0.32297157550068845, 'cue_type': 'incorrect', 'stim_position': (0.4, 0), 'expected_response': 'l'}, {'cue_stim_type': 'exo', 'cue_position': (-0.4, 0), 'cue_time': 0.45451080672945254, 'cue_type': 'incorrect', 'stim_position': (0.4, 0), 'expected_response': 'l'}, {'cue_stim_type': 'exo', 'cue_position': (-0.4, 0), 'cue_time': 0.5921052648072145, 'cue_type': 'incorrect', 'stim_position': (0.4, 0), 'expected_response': 'l'}, {'cue_stim_type': 'exo', 'cue_position': (-0.4, 0), 'cue_time': 0.5323305070662401, 'cue_type': 'incorrect', 'stim_position': (0.4, 0), 'expected_response': 'l'}, {'cue_stim_type': 'exo', 'cue_position': (-0.4, 0), 'cue_time': 0.987689543319433, 'cue_type': 'incorrect', 'stim_position': (0.4, 0), 'expected_response': 'l'}, {'cue_stim_type': 'exo', 'cue_position': (-0.4, 0), 'cue_time': 0.9427788862349625, 'cue_type': 'incorrect', 'stim_position': (0.4, 0), 'expected_response': 'l'}, {'cue_stim_type': 'exo', 'cue_position': (-0.4, 0), 'cue_time': 0.37826961368195333, 'cue_type': 'incorrect', 'stim_position': (0.4, 0), 'expected_response': 'l'}, {'cue_stim_type': 'exo', 'cue_position': (-0.4, 0), 'cue_time': 0.8593638337304581, 'cue_type': 'incorrect', 'stim_position': (0.4, 0), 'expected_response': 'l'}]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="exo_cues.xlsx" valType="file"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="random" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="num"/>
+      <Param name="name" updates="None" val="exo_trials" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="exo_section"/>
+    <LoopTerminator name="exo_trials"/>
+    <Routine name="outro"/>
+  </Flow>
+</PsychoPy2experiment>
